@@ -12,8 +12,8 @@ app.get('/', (req, res) => {
     res.send('<h1>Home blog</h1>')
 })
 
-app.use('/pizzas', postsRouter);
+app.use('/posts', postsRouter);
 
 app.listen(port, () => {
-    console.log(`Example app listenint on port ${port}`)
+    console.log(`Example app listening on port ${port}`)
 });

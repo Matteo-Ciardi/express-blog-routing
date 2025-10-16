@@ -7,7 +7,7 @@ router.get('/', function (req, res) {
 })
 
 router.get('/:id', function (req, res) {
-    res.send('Dettagli dei post' + req.params.id);
+    res.send('Dettagli dei post ' + req.params.id);
 })
 
 router.post('/', function (req, res) {
@@ -15,15 +15,15 @@ router.post('/', function (req, res) {
 })
 
 router.put('/:id', function (req, res) {
-    res.send('Modifica integrale del post' + req.params.id);
+    res.send('Modifica integrale del post ' + req.params.id);
 })
 
 router.patch('/:id', function (req, res) {
-    res.send('Modifica parziale del post' + req.params.id);
+    res.send('Modifica parziale del post ' + req.params.id);
 })
 
 router.delete('/:id', function (req, res) {
-    res.send('Eliminazione post' + req.params.id);
+    res.send('Eliminazione post ' + req.params.id);
 })
 
-module.esports = router;
+module.exports = router;
